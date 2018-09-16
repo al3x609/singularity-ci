@@ -62,7 +62,7 @@ From: centos:latest
   yum --enablerepo=epel -y install openbox
   mv -f rc.xml /etc/xdg/openbox/ 
 
-  # configure locales
+  # configure localess
   dbus-uuidgen > /etc/machine-id  
   ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime 
   echo ${TZ} > /etc/timezone 
